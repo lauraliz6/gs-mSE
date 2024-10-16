@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/boilerplate.css"/>
+    <link  id="hostStyle" rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/editStyle.css">
+    <title>mSE</title>
+</head>
+<!-- test -->
+<!-- this should either have class of horizontal or vertical depending on user preference -->
+<body class="hostElt horizontal">
+
+    <header>
+        <div id="logo">mSE</div>
+    </header>
+
+    <section id="openSpace">
+    <!-- this should be populated by the JSON -->
+    
+    </section>
+
+    <section id="foot">
+        <!-- add class of "open" when clicked on, and open the space -->
+        <img src="img/moveArrow.png" alt="arrows" id="moveItems" />
+        <!-- <img src="img/gear.png" alt="gear icon" id="settings" /> -->
+        <img src="img/plus.png" alt="plus sign icon" id="addNew"/>
+    </section>
+
+    <!-- this cover is here to force the user to click and reload the window after changing something in settings -->
+    <div id="cover" class="hidden"></div>
+    
+    <script src="js/libs/CSInterface.js"></script>
+    <script src="js/libs/jquery-2.0.2.min.js"></script>
+
+    <script src="js/themeManager.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- custom js here -->
+    <script src="js/custom.js"></script>
+    <script src="js/style.js"></script>
+    <script src="js/addTabSectionButton.js"></script>
+    <script src="js/editMode.js"></script>
+    <script src="js/scripts.js"></script>
+    
+        
+</body>
+</html>
+

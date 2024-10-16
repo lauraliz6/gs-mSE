@@ -1,0 +1,360 @@
+body {
+  background-color: transparent;
+  font-family: "Roboto Condensed";
+  display: flex;
+  color: white;
+}
+
+#cover {
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 99;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* INSTALLING THE FONTS */
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto Condensed Bold";
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto Condensed Light";
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Light.ttf");
+}
+
+header {
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+}
+
+#logo {
+  color: #009a9d;
+  margin: auto;
+}
+
+.tab {
+  padding: 0;
+  margin: 0;
+}
+
+.title,
+.tabTitle {
+  box-sizing: border-box;
+  padding: 8px;
+  margin: auto 0;
+}
+
+.tabTitle {
+  background-color: #008588;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h1.tabTitle:hover {
+  background-color: #abe7e7;
+  cursor: pointer;
+}
+
+.section .title {
+  font-size: 20px;
+  cursor: default;
+}
+
+.buttons button {
+  font-size: 16px;
+  font-family: "Roboto Condensed";
+  height: 54px;
+  width: 54px;
+  min-height: 30px;
+  margin: auto;
+  color: #009a9c;
+  background-color: white;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border: 2px solid #abe7e7;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+.buttons button:hover {
+  border: 3px solid #58c5c6;
+}
+
+#openSpace {
+  background-color: #009a9d;
+}
+
+#foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+}
+
+#foot img {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#foot img:hover {
+  background-color: #abe7e7;
+}
+
+#addSpace {
+  background-color: #53585f;
+  width: 100%;
+}
+
+#addSpace h1 {
+  margin: auto;
+}
+
+#addSpace button {
+  font-size: 16px;
+  font-family: "Roboto Condensed";
+  width: auto;
+  margin: auto 10px;
+  padding: 10px 20px;
+  color: #a6aaa9;
+  background-color: white;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border: 2px solid #a6aaa9;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+#addSpace button:hover,
+#addSpace button.active {
+  border: 2px solid #eaeaea;
+  color: #53585f;
+}
+
+#addSpace button.active {
+  cursor: default;
+}
+
+#foot img.active {
+  background-color: #53585f;
+}
+
+input {
+  font-family: "Roboto Condensed Light";
+  color: #53585f;
+  font-size: 13px;
+  padding: 10px 15px;
+  margin: auto 5px;
+}
+
+button#add {
+  margin: auto 10px;
+}
+
+h4 {
+  text-align: center;
+  margin: auto;
+}
+
+form {
+  display: flex;
+}
+
+/* this class is for the buttons in the foot, to indicate open */
+.open {
+  background-color: #53585f;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+
+/* HORIZONTAL ALIGNMENT */
+body.horizontal,
+.horizontal #openSpace,
+.horizontal .tab {
+  width: 100%;
+}
+
+body.horizontal,
+.horizontal #openSpace,
+.horizontal .tab,
+.horizontal .section,
+.horizontal .buttons,
+.horizontal #addSpace {
+  display: flex;
+  flex-direction: row;
+}
+
+body.horizontal {
+  max-height: 60px;
+  width: 100%;
+}
+
+.horizontal #openSpace,
+.horizontal #addSpace {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.horizontal header {
+  width: 21px;
+}
+
+.horizontal #logo {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.horizontal .section {
+  margin-left: 8px;
+}
+
+.horizontal .buttons button {
+  margin-right: 7px;
+}
+
+.horizontal .tabTitle {
+  border-top: 7.5px solid #008588;
+  border-bottom: 7.5px solid #008588;
+}
+
+.horizontal h1.tabTitle:hover {
+  border-top: 7.5px solid #abe7e7;
+  border-bottom: 7.5px solid #abe7e7;
+}
+
+.horizontal h4 {
+  margin-left: 10px;
+}
+
+.horizontal form {
+  flex-direction: row;
+  margin: auto 5px;
+}
+
+/* VERTICAL ALIGNMENT */
+body.vertical,
+.vertical #openSpace,
+.vertical .tab {
+  height: 100%;
+}
+
+body.vertical,
+.vertical #openSpace,
+.vertical .tab,
+.vertical .section,
+.vertical .buttons,
+.vertical #addSpace {
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical .tab,
+.vertical .section,
+.vertical .buttons,
+.vertical #addSpace {
+  flex-shrink: 0;
+}
+
+body.vertical {
+  max-width: 60px;
+  height: 100%;
+}
+
+.vertical #openSpace,
+.vertical #addSpace {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.vertical header {
+  height: 21px;
+}
+
+.vertical #logo {
+  text-align: center;
+}
+
+.vertical .title,
+.vertical .tabTitle {
+  margin: 0 auto;
+}
+
+.vertical .tabTitle {
+  border-left: 7.5px solid #008588;
+  border-right: 7.5px solid #008588;
+}
+
+.vertical .section {
+  margin-top: 8px;
+}
+
+.vertical .buttons button {
+  margin-bottom: 7px;
+}
+
+.vertical #foot {
+  flex-direction: row;
+}
+
+.vertical h1.tabTitle:hover {
+  border-left: 10px solid #abe7e7;
+  border-right: 10px solid #abe7e7;
+}
+
+.vertical #addSpace {
+  height: 100%;
+}
+
+.vertical #addSpace button {
+  font-size: 12px;
+  padding: 1px;
+  margin: 5px auto;
+}
+
+.vertical input {
+  padding: 1px;
+  font-size: 12px;
+}
+
+.vertical h4 {
+  margin-top: 10px;
+}
+
+.vertical form {
+  flex-direction: column;
+  margin: 5px auto;
+}
+
+.vertical form label {
+  text-align: center;
+}
+
+.vertical form input {
+  margin: auto;
+}

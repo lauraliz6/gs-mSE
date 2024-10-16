@@ -1,0 +1,107 @@
+
+.edit .buttons button {
+    border: 2px solid #53585F;
+    min-height: 54px;
+    min-width: 54px;
+    flex-shrink: 0;
+}
+
+.edit .section {
+    background-color: #ABE7E7;
+    border: 2px solid #ABE7E7;
+    margin: 0;
+}
+
+.arrows {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.arrow {
+    height: auto;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    background-color: #53585F;
+}
+
+.arrow.right {
+    padding: 14px 0px 14px 4px;
+}
+.section .arrow.right {
+    margin-left: -7px;
+}
+.arrow.left {
+    margin-right: 0px;
+    padding: 14px 4px 14px 0px;
+}
+
+.trash {
+    height: 54px;
+    width: 54px;
+    background-color:rgba(255,255,255,.5); 
+    text-align: center;
+    margin-right: -54px;
+    opacity: 0;
+    z-index: 99;
+}
+.inTab.trash {
+    height: 30px;
+    width: 30px;
+    margin-right: -30px;
+}
+.inTab.trash img {
+    padding: 0;
+}
+.trash img {
+    height: 100%;
+    width: auto;
+    padding: 10px;
+}
+
+.trash:hover {
+    opacity: 1;
+}
+
+.vertical .trash {
+    margin-right: 0px;
+    margin-bottom: -54px;
+}
+.vertical .inTab.trash {
+    margin-right: 0px;
+    margin-bottom: -30px;
+}
+
+.vertical .arrows {
+    flex-direction: column;
+    flex-shrink: 0;
+    height: auto;
+}
+
+.vertical .arrow.left {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    margin-bottom: -13px;
+    padding: 14px 5px 14px 0;
+}
+
+.vertical .arrow.right {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    padding: 14px 0 14px 5px;
+    margin: -13px 0 0 0;
+}
+
+.vertical .section .arrow.right {
+    margin-top: -20px;
+}
